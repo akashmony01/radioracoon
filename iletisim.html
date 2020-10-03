@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172942036-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172942036-1');
+    </script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TJQDCG9');
+    </script>
+    <meta charset="UTF-8">
+    <title>Radio Racoon</title>
+    <meta name="description" content="Click now to see our weekly programs!"/>
+    <meta name="viewport" content="Let us know if you're bored or bonded. Maybe we can
+    make some music together! Click now to contact us!"/>;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/LOGOSON2.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/greghub/assets/js/radio.min.js"></script>
+    <style>
+        body {
+            background: #000000;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th,
+        td {
+
+            padding: 12px;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_y6bSc0aiGtR55KvJdZ5Ix");
+            emailjs.send("gmail", "radio_racoon", { name: "Racoon", notes: "Merhaba" })
+        })();
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src=assets/images/LOGOSON2.png alt="Istanbul1" class="logo-circle" height=60 width=60><span class="logo-text"> Radio Racoon</span>
+            <div class="icons">
+
+            </div>
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+
+            <ul class="navbar-nav ml-auto ">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="ekip.html">
+                        <p class="white-text">Team</p><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="program.html">
+                        <p class="white-text">Program</p><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link" href="iletisim.html">
+                        <p class="white-text">Contact</p><span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+
+    <section class="container mt-5">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center"><strong>Let us know if you're bored or bonded. </strong></h3>
+                <h5 class="uppercase text-center">Maybe we can make some music together!</h5>
+
+                <div class="center-form">
+                    <form onsubmit="return sendMail(this);" id="contactForm">
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name/Surname" required/>
+                        <input type="text" name="emailadress" id="emailaddress" class="form-control" placeholder="E-mail" required/>
+                        <textarea rows="7" name="radiosummary" id="radiosummary" class="form-control" placeholder="Who are you? What do you listen? What are you up to? " required/></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-dark" onclick="submitForm()"><strong>Keep'em coming!</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="assets/js/sendEmail.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJQDCG9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+</html>
